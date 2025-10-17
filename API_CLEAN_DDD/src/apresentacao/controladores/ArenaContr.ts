@@ -40,7 +40,7 @@ export class ArenaController {
       const id = Number(req.params.id);
       const arena = deletearena.executar(id);
       res.json(arena);
-    } catch (erro: any) {
+    } catch (erro: any) {m
       res.status(404).json({ mensagem: erro.message });
     }
     }
